@@ -18,8 +18,7 @@ class App extends Component {
     };
 
     this.setState(currentState => ({
-      messages: currentState.messages.concat([newMessage])
-     // messages: [ ...currentState.messages, newMessage ]
+      messages: [ ...currentState.messages, newMessage ]
     }));
   };
 
